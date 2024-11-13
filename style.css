@@ -1,0 +1,660 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(216, 208, 208);
+}
+
+/* HEADER STYLING */
+
+header {
+    position: fixed; 
+    top: 0;
+    width: 100%; 
+    /*  border: 1px solid black;  */
+    background-color: rgb(187, 173, 173);
+    
+}
+/* added this main tag only after making the headercontainer to be fixed */
+main{
+    margin-top: 65px;
+}
+.navBar p {
+    font-size: 20px;
+}
+.navBar {
+    margin: 15px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 20px;
+}
+.logo img {
+    width: 55px;
+    height: 55px;
+}
+a {
+    text-decoration: none;
+    color: black;
+    transition: 0.2s ease;
+}
+a:hover {
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+}
+.about {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+}
+.divBtn {
+    padding-right: 40px;
+}
+.btn {
+    border: 0px;
+    background-color: rgb(157, 204, 243);
+    height: 40px;
+    padding: 0 10px;
+    border-radius: 10px;
+    font-size: 17px;
+}
+.btn:hover {
+    background-color: rgb(110, 158, 196);
+}
+
+/* MAIN STYLING */
+
+.tonBuilders {
+    text-align: center;
+}
+.tonBuilders h1 {
+    font-size: 55px;
+    padding-top: 55px;
+    font-weight: 550;
+}
+.tonBuilders p {
+    padding-top: 25px;
+    font-size: 18px;
+}
+.tonBuilders img {
+    padding: 65px 0;
+    width: 550px;
+    height: 550px;
+}
+.about2 {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 70px;
+}
+.about2 h2 {
+    font-size: 40px;
+}
+.about2 p {
+    font-size: 24px;
+    line-height: 35px;
+}
+.mission {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 70px;
+    font-size: 15px;
+    line-height: 22px;
+    font-family: monospace;
+}
+.mission p {
+    font-size: 18px;
+    font-family: monospace;
+}
+.mission h2 {
+    padding-top: 45px;
+    padding-bottom: 15px;
+}
+.tradoorContainer {
+    border-right: none;
+    min-width: 420px;
+    height: 250px;
+    margin-left: 25px;
+    transition: 0.4s ease;
+}
+.tradoorImage {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+}
+.tradoorContainer img {
+    width: 65px;
+    height: 45px;
+}
+.tradoor {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px 0 20px;
+}
+.portfolio {
+    padding: 45px 25px;
+}
+.tradoor p {
+    font-size: 14px;
+    color: #333333bd;
+    border: 1px solid #333333bd;
+    border-radius: 4px;
+    padding: 5px 7px;
+}
+.stoneContainer {
+    min-width: 420px;
+    height: 250px; 
+    border-right: none;
+    transition: 0.4s ease;
+}
+.stoneContainer img {
+    width: 65px;
+    height: 45px;
+}
+.stoneImage {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+}
+.stone {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px 0 20px;
+}
+.stone p {
+    font-size: 14px;
+    color: #333333bd;
+    border: 1px solid #333333bd;
+    border-radius: 4px;
+    padding: 5px 7px;
+}
+.gameeContainer {
+    min-width: 420px;
+    height: 250px;
+    transition: 0.4s ease;
+}
+.gameeContainer img {
+    width: 65px;
+    height: 45px;
+}
+.gameeImage {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+}
+.gamee {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px 0 20px;
+}
+.gamee p {
+    font-size: 14px;
+    color: #333333bd;
+    border: 1px solid #333333bd;
+    border-radius: 4px;
+    padding: 5px 7px;
+}
+.evaaContainer {
+    min-width: 420px;
+    height: 250px; 
+    margin-left: 25px;
+    transition: 0.4s ease;
+}
+.evaaContainer img {
+    width: 65px;
+    height: 45px;
+}
+.evaaImage {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+}
+.evaa {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px 0 20px;
+}
+.evaa p {
+    font-size: 14px;
+    color: #333333bd;
+    border: 1px solid #333333bd;
+    border-radius: 4px;
+    padding: 5px 7px;
+}
+.dedustContainer {
+    min-width: 420px;
+    height: 250px; 
+    transition: 0.4s ease;
+}
+.dedustContainer img {
+    width: 65px;
+    height: 45px;
+}
+.dedustImage {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+}
+.dedust {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px 0 20px;
+}
+.dedust p {
+    font-size: 14px;
+    color: #333333bd;
+    border: 1px solid #333333bd;
+    border-radius: 4px;
+    padding: 5px 7px;
+}
+.stormContainer {
+    min-width: 420px;
+    height: 250px;
+    transition: 0.4s ease;
+}
+.stormContainer img {
+    width: 65px;
+    height: 45px;
+}
+.stormImage {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+}
+.storm {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px 0 20px;
+}
+.storm p {
+    font-size: 14px;
+    color: #333333bd;
+    border: 1px solid #333333bd;
+    border-radius: 4px;
+    padding: 5px 7px;
+}
+.portfolioContainer1, .portfolioContainer2 {
+    display: flex;
+    margin-left: 20px;
+    flex-direction: row;
+}
+.tradoorContainer:hover, .stoneContainer:hover, .gameeContainer:hover, .evaaContainer:hover, .dedustContainer:hover, .stormContainer:hover {
+    border: 1px solid #333333bd;
+    background-color: rgb(255, 255, 255);
+}
+.moreProduct {
+    text-align: center;
+    padding: 55px;
+}
+.support {
+    display: flex;
+    justify-content: space-between;
+}
+.support h2 {
+    font-size: 40px;
+    padding: 20px 70px;
+}
+.support img {
+    width: 50px;
+    height: 50px;
+    margin: 85px 0 25px 0;
+}
+.support p {
+    font-size: 20px;
+    line-height: 35px;
+}
+.support h3 {
+    padding-bottom: 10px;
+}
+.incubation {
+    padding-right: 24px;
+}
+.tonacc {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 15px;
+    margin-bottom: 175px;
+}
+.tonacc img {
+    width: 50px;
+    height: 50px;
+    
+}
+.tonacc p {
+    font-size: 20px;
+    line-height: 35px;
+}
+.tonacc h3 {
+    padding-bottom: 10px;
+}
+.visitPortal {
+    display: flex;
+    justify-content: space-between;
+    margin: 85px 0 25px 0;
+    align-items: center;
+}
+.visitPortal p {
+    font-size: 14px;
+    color: #333333bd;
+    border: 1px solid #333333bd;
+    border-radius: 4px;
+    padding: 2px 7px;
+    transition: 0,4s ease;
+}
+.visitPortal p:hover{
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+}
+.applyProject {
+    height: 100vh;
+    display: grid;
+    place-content: center;
+}
+.applyProject h4 {
+    text-align: center;
+    color: whitesmoke;
+    font-size: 120px;
+    margin-bottom: 20px;
+}
+.applyProject p {
+    text-align: center;
+}
+.applyProject .committed {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.applyProject button {
+    border: 0px;
+    background-color: rgb(157, 204, 243);
+    height: 40px;
+    padding: 0 10px;
+    border-radius: 10px;
+    font-size: 17px;
+}
+.applyProject button:hover {
+    background-color: rgb(110, 158, 196);
+}
+
+/* FOOTER STYLING */
+
+.asideFooter {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 30px;
+}
+.asideFooter img {
+    width: 55px;
+    height: 55px;
+}
+.imageFooter {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.asideFooter p {
+    padding-top: 15px;
+    font-size: 20px;
+}
+.accuraten {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 30px;
+    padding-bottom: 50px;
+}
+
+/* || LARGE SCREEN STYLING  */
+@media all and (max-width: 992px) {
+    html {
+        max-width: 100vw;
+    }
+    .navBar p {
+        font-size: 16px;
+    }
+    .about2 {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 40px;
+    }
+    .about2 h2 {
+        font-size: 35px;
+    }
+    .about2 p {
+        font-size: 23px;
+    }
+    .mission {
+        padding: 15px 40px;
+        font-size: 10px;
+    }
+    .articleContainer {
+        display: flex;
+    }
+    .support h2 {
+        font-size: 35px;
+        padding: 15px 40px;
+    }
+    .support p {
+        font-size: 16px;
+    }
+    .tonacc p {
+        font-size: 16px;
+    }
+    .visitPortal p{
+        font-size: 10px;
+    }
+    .applyProject {
+        height: 80vh;
+    }
+    .applyProject h4 {
+        font-size: 100px;
+    }
+    .applyProject .committed {
+        font-size: 17px;
+        margin-bottom: 30px;
+    }
+    .applyProject button {
+        font-size: 14px;
+    }
+    .asideFooter p {
+        padding-top: 15px;
+        font-size: 16px;
+    }
+    .portfolioContainer1, .portfolioContainer2 {
+        display: block;
+        margin: 20px;
+    }
+    .evaaContainer {
+        margin-left: 0;
+    }
+    .tradoorContainer {
+        margin-left: 0;
+    }
+}
+
+/* || MEDIUM SCREEN STYLING */
+@media all and (max-width: 768px) {
+      html {
+          max-width: 100vw;
+      }
+      .navBar .about {
+          display: none;
+      }
+      .tonBuilders h1 {
+        font-size: 45px;
+        padding-top: 55px;
+        font-weight: 550;
+    }
+    .tonBuilders p {
+        padding-top: 25px;
+        font-size: 15px;
+    }
+      br {
+          display: none;
+      }
+      .tonBuilders img {
+          width: 455px;
+          height: 455px;
+      }
+      .about2 {
+          display: block;
+          padding: 20px;
+      }
+      .about2 h2 {
+          padding: 20px 0;
+      }
+      .mission {
+          padding: 25px;
+          display: block;
+          border: 1px solid #333333bd;
+          margin: 45px 20px;
+          border-radius: 7px;
+      }
+      .mission h2 {
+          padding: 0;
+      }
+      .mission p {
+          padding-top: 10px;
+      }
+      .portfolioContainer2, .portfolioContainer1 {
+          display: block;
+      }
+      .support {
+          display: block;
+      }
+      .support h2 {
+         padding: 25px;
+      }
+      br {
+          display: none;
+      }
+      .incubation {
+          display: block;
+          border: 1px solid #333333bd;
+          margin: 45px 20px;
+          border-radius: 8px;
+          padding: 0 20px;
+          padding-bottom: 35px;
+      }
+      .tonacc {
+          display: block;
+          display: block;
+          border: 1px solid #333333bd;
+          margin: 45px 20px 85px 20px;
+          border-radius: 8px;
+          padding: 0 20px;
+          padding-bottom: 35px;
+      }
+      .applyProject {
+          height: 65vh;
+          border: 1px solid #333333bd;
+          margin: 45px 20px;
+          border-radius: 8px;
+      }
+      .applyProject h4 {
+          font-size: 120px;
+      }
+      .applyProject .committed, .applyProject button {
+          font-size: 14px;
+      }
+      .asideFooter {
+          display: block;
+      }
+  }
+
+/* || MOBILE DEVICE LANDSCAPE */
+@media all and (max-height: 425px) and (min-aspect-ratio: 7/4) {
+
+}
+
+/* || SMALL SCREEN STYLING */
+@media all and (max-width: 576px) {
+    html {
+        max-width: 100vw;
+    }
+    .navBar .about {
+       display: none;
+   } 
+   .tonBuilders img {
+       width: 455px;
+       height: 455px;
+   }
+   .about2 {
+       display: block;
+       padding: 20px;
+   }
+   .about2 h2 {
+       padding: 20px 0;
+   }
+   .mission {
+       padding: 25px;
+       display: block;
+       border: 1px solid #333333bd;
+       margin: 45px 20px;
+       border-radius: 7px;
+   }
+   .mission h2 {
+       padding: 0;
+   }
+   .mission p {
+       padding-top: 10px;
+   }
+   .portfolioContainer2, .portfolioContainer1 {
+       display: block;
+   }
+   .support {
+       display: block;
+   }
+   .support h2 {
+      padding: 25px;
+   }
+   br {
+       display: none;
+   }
+   .incubation {
+       display: block;
+       border: 1px solid #333333bd;
+       margin: 45px 20px;
+       border-radius: 8px;
+       padding: 0 20px;
+       padding-bottom: 35px;
+   }
+   .tonacc {
+       display: block;
+       display: block;
+       border: 1px solid #333333bd;
+       margin: 45px 20px 85px 20px;
+       border-radius: 8px;
+       padding: 0 20px;
+       padding-bottom: 35px;
+   }
+   .applyProject {
+       height: 65vh;
+       border: 1px solid #333333bd;
+       margin: 45px 20px;
+       border-radius: 8px;
+   }
+   .applyProject h4 {
+       font-size: 100px;
+   }
+   .applyProject .committed, .applyProject button {
+       font-size: 14px;
+   }
+   .asideFooter {
+       display: block;
+   }
+}

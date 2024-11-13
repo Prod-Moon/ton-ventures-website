@@ -1,0 +1,27 @@
+BOOTSTRAP BREAKPOINTS:
+Breakpoint	Class infix	Dimensions
+X-Small	None	<576px
+Small	sm	≥576px
+Medium	md	≥768px
+Large	lg	≥992px
+Extra large	xl	≥1200px
+Extra extra large	xxl	≥1400px
+
+THINGS TO ADD
+Animation Loading
+Media Query For Mobile Landscape screen
+
+
+remember to make font bigger
+
+no underline for any link
+
+put picture for Animation
+
+
+
+
+add readme.md file
+make background color darker
+
+must finish project in 4 days
