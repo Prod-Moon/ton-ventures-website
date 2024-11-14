@@ -589,16 +589,39 @@ a:hover {
     .navBar .about {
        display: none;
    } 
-   .tonBuilders img {
-       width: 455px;
-       height: 455px;
+   .navBar p {
+    font-size: small;
    }
+   .navBar .btn {
+    font-size: x-small;
+   }
+   .btn {
+    border: 0px;
+    background-color: rgb(157, 204, 243);
+    height: 30px;
+    padding: 0 6px;
+}
+.logo img {
+    width: 35px;
+    height: 35px;
+}
    .about2 {
        display: block;
        padding: 20px;
    }
+   .tonBuilders p {
+        font-size: 12px;
+   }
+   .tonBuilders img {
+    width: 355px;
+    height: 400px;
+}
    .about2 h2 {
        padding: 20px 0;
+       font-size: xx-large;
+   }
+   .about2 p {
+    font-size: 19px;
    }
    .mission {
        padding: 25px;
@@ -609,8 +632,10 @@ a:hover {
    }
    .mission h2 {
        padding: 0;
+
    }
    .mission p {
+        font-size: 16px;
        padding-top: 10px;
    }
    .portfolioContainer2, .portfolioContainer1 {
@@ -642,6 +667,9 @@ a:hover {
        padding: 0 20px;
        padding-bottom: 35px;
    }
+   .support h2 {
+    font-size: xx-large;
+   }
    .applyProject {
        height: 65vh;
        border: 1px solid #333333bd;
@@ -649,12 +677,35 @@ a:hover {
        border-radius: 8px;
    }
    .applyProject h4 {
-       font-size: 100px;
+       font-size: 65px;
    }
+.applyProject .committed {
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+.applyProject button {
+    height: 30px;
+    padding: 0 10px;
+    border-radius: 10px;
+    font-size: 12px;
+}
    .applyProject .committed, .applyProject button {
        font-size: 14px;
    }
    .asideFooter {
        display: block;
    }
+   .tradoorContainer, .stoneContainer, .gameeContainer, .evaaContainer, .dedustContainer, .stormContainer {
+    border: 1px solid #333333bd;
+    border-bottom: none;
+   } 
+   .stormContainer {
+    border: 1px solid #333333bd;
+   }
+   .asideFooter p {
+    font-size: small;
+   }
+   .accuraten p {
+    font-size: small;
+   } 
 }
